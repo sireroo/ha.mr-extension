@@ -6,9 +6,10 @@
   "description": "Generates a QR code using ha.mr compression",
 
   "icons": {
-    "48": "icons/qrcode-48.png",
-    "96": "icons/qrcode-98.png"
+    "48": "icons/icon-48.png"
   },
+
+  "permissions": ["activeTab", "scripting"],
 
   "browser_specific_settings": {
     "gecko": {
@@ -19,10 +20,9 @@
     }
   },
 
-  "content_scripts": [
-    {
-      "matches": ["*://*/*"],
-      "js": ["qrcodegen.js"]
-    }
-  ]
+  "action": {
+    "default_icon": "icons/icon-48.png",
+    "default_title": "ha.mr qr code",
+    "default_popup": "popup/hamr.html"
+  }
 }
