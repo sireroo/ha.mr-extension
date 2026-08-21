@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "ha.mr qr codes",
+  "version": "1.0",
+
+  "description": "Generates a QR code using ha.mr compression",
+
+  "icons": {
+    "48": "icons/qrcode-48.png",
+    "96": "icons/qrcode-98.png"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "elliottbu@pm.me",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["qrcodegen.js"]
+    }
+  ]
+}
