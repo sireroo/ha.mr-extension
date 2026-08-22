@@ -3,19 +3,72 @@
   <head>
     <meta charset="utf-8" />
 	<style>
+    @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+    :root {
+      color-scheme: light dark;
+    }
+
 		html, body {
 			margin: 0;
-			width: 300px;
+			width: 150px;
       height: 200px;
+      overflow: hidden;
 		}
+
+    * {
+      font-family: "Hammersmith One", sans-serif;
+      margin: 0;
+    }
+
+    #qrcode {
+      width: 100vw;
+      height: 100vw;
+      image-rendering: pixelated;
+      margin: 0;
+    }
+
+    #main {
+      gap: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #buttons {
+      width: 100vw;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    #link-buttons {
+      margin: 0;
+      height: 100%;
+      width: 33%;
+      border: 2px solid blue;
+    }
+
+    #qr-buttons {
+      margin: 0;
+      height: 100%;
+      width: 66%;
+      border: 2px solid red;
+      float: right;
+    }
 	</style>
-  </head>
+</head>
 
   <body>
-    <p>
-      <a id="current-url" target="_blank">Something is wrong</a>
-      <br><a id="compressed-url" target="_blank">Something is wrong</a>
-    </p>
-    <script type="module" src="/popup/hamr.js"></script>
+    <div id="main">
+      <canvas id="qrcode"></canvas>
+      <div id="buttons">
+        <div id="link-buttons">
+        </div>
+        <div id="qr-buttons">
+        </div>
+      </div>
+    </div>
+    <script type="module" src="hamr.js"></script>
   </body>
 </html>
