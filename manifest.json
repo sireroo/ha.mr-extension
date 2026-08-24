@@ -9,7 +9,7 @@
     "48": "icons/icon-48.png"
   },
 
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["activeTab", "scripting", "clipboardWrite"],
 
   "browser_specific_settings": {
     "gecko": {
