@@ -1,9 +1,9 @@
 # HA.MR QR CODE EXTENSION
 
-code copied from <ha.mr>()
+Small extension to copy ha.mr links and qr codes for the site you are currently on.
 
-copied form ha.mr
+## Acknowledgements
 
-lean-qr
-tabler icons
-twemoji
+[ha.mr](https://github.com/p2r3/ha.mr)
+[tabler icons](https://github.com/tabler/tabler-icons)
+[twemoji](https://allsvgicons.com/pack/twemoji/)
