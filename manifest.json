@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "ha.mr qr codes",
-  "version": "1.0",
+  "version": "2.0",
 
   "description": "Generates a QR code using ha.mr compression",
 
