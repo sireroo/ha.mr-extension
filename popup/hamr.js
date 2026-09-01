@@ -20,7 +20,6 @@ const hamrIcon = document.querySelector("#hamricon");
 const linkIcon = document.querySelector("#linkicon");
 
 const swapButton = document.querySelector("#swpbtn");
-const settingsButton = document.querySelector("#stngbtn");
 
 let hamrMode = true;
 
@@ -36,7 +35,6 @@ function update(tabs) {
   qrButton.style.animation = "none";
   saveButton.style.animation = "none";
   swapButton.style.animation = "none";
-  settingsButton.style.animation = "none";
 
   const url = tabs[0].url;
 
